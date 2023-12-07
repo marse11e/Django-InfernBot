@@ -57,8 +57,6 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
 
 class CustomObtainAuthToken(ObtainAuthToken):
     def post(self, request, *args, **kwargs):
-        
-        # AuthTokenSerializer > username, password, token
         serializer = self.serializer_class(data=request.data, 
             context={'request': request})
         
@@ -89,13 +87,10 @@ class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
     permission_classes = [permissions.AllowAny]
     
-    # username Marselle password 123321 
     
     def create(self, request, *args, **kwargs):
         response = super().create(request, *args, **kwargs)
 
         user = User.objects.get(username=request.data['username']) 
-        # token - Было создано давно  
-        # created - Создали
         token, created = Token.objects.get_or_create(user=user) 
         return Response({'token': token.key}, status=status.HTTP_201_CREATED)
