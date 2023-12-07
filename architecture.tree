@@ -1,0 +1,80 @@
+.
+├── architecture.tree
+├── db.sqlite3
+├── InfernBot
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── settings.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── wsgi.cpython-310.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── main
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_alter_notes_order.py
+│   │   ├── 0003_alter_notes_options_alter_notes_user.py
+│   │   ├── 0004_remove_telegramuser_page.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-310.pyc
+│   │   ├── apps.cpython-310.pyc
+│   │   ├── __init__.cpython-310.pyc
+│   │   └── models.cpython-310.pyc
+│   ├── serializers.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+├── requirements.txt
+├── telegrambot
+│   ├── apps.py
+│   ├── bot.py
+│   ├── __init__.py
+│   ├── keyboards.py
+│   ├── management
+│   │   └── commands
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   └── __pycache__
+│       ├── apps.cpython-310.pyc
+│       ├── bot.cpython-310.pyc
+│       ├── __init__.cpython-310.pyc
+│       ├── inlines.cpython-310.pyc
+│       └── keyboards.cpython-310.pyc
+└── venv
+    ├── bin
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── activate.nu
+    │   ├── activate.ps1
+    │   ├── activate_this.py
+    │   ├── deactivate.nu
+    │   ├── django-admin
+    │   ├── normalizer
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip-3.10
+    │   ├── pip3.10
+    │   ├── python -> /usr/bin/python3
+    │   ├── python3 -> python
+    │   ├── python3.10 -> python
+    │   ├── sqlformat
+    │   ├── wheel
+    │   ├── wheel3
+    │   ├── wheel-3.10
+    │   └── wheel3.10
+    ├── lib
+    │   └── python3.10
+    └── pyvenv.cfg
+
+16 directories, 61 files
